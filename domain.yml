@@ -1,0 +1,25 @@
+version: "3.1"
+
+intents:
+  - perform_web_automation
+  - greet
+   - iam_bot
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+
+  utter_goodbye:
+      - text: "Goodbye! Have a great day."
+
+  utter_iam_bot:
+    - text: "yes,i am a bot"
+
+
+actions:
+  - action_perform_web_automation
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
